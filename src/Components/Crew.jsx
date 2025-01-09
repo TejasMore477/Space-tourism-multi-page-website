@@ -34,10 +34,10 @@ function Crew({ setMenuBar }) {
               key={i}
               onClick={() => setCi(i)}
               className={`text-[3.5vw] font-light ${
-                ci === i ? "text-white border-b-[1px]" : "text-gray-400"
+                ci === i ? "text-white" : "text-gray-400"
               }`}
             >
-              ◉{" "}
+              ◉
             </button>
           ))}
         </div>
