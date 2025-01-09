@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router";
 import Home from "./Components/Home";
 import SideMenu from './Components/partials/SideMenu';
 import Destination from "./Components/Destination";
+import Crew from "./Components/Crew";
 
 function App() {
   const [menuBar, setMenuBar] = useState(false);
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home setMenuBar={setMenuBar} />} />
         <Route path="/destination" element={<Destination setMenuBar={setMenuBar} />} />
+        <Route path="/crew" element={<Crew setMenuBar={setMenuBar} />} />
       </Routes>
     </div>
   );
