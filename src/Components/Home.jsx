@@ -19,9 +19,12 @@ function Home({ setMenuBar }) {
           back, and relax because we’ll give you a truly out of this world
           experience!
         </p>
-        <button type="button" className="size-[37vw] text-[3.5vw] text-center rounded-full text-black font-semibold mt-20 bg-white animate-pulse">
-          <Link  to="/destination" >Explore</Link>
-        </button>
+        <Link
+          to="/destination"
+          className="size-[37vw] text-[3.5vw] grid place-content-center rounded-full text-black font-semibold mt-20 bg-white animate-pulse"
+        >
+          Explore
+        </Link>
       </div>
     </div>
   );
