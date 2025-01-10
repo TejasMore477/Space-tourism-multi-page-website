@@ -9,11 +9,11 @@ function SideMenu({ setMenuBar, menuBar }) {
           e.stopPropagation();
           setMenuBar(false);
         }}
-        className=" z-50 absolute h-screen bg-black bg-opacity-65 w-full flex justify-end duration-300 ease-linear transition-all"
+        className="z-50 absolute h-screen bg-black bg-opacity-65 w-full flex justify-end duration-300 ease-linear transition-all"
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="w-[60%] rounded-l-lg bg-zinc-600 backdrop-blur-sm bg-opacity-15 px-6 pt-10"
+          className="sm:w-[40%] w-[60%] rounded-l-lg bg-zinc-600 backdrop-blur-sm bg-opacity-15 sm:px-10 px-6 sm:pt-7 pt-10"
         >
           <div className="w-full flex justify-end">
             <img
@@ -21,11 +21,11 @@ function SideMenu({ setMenuBar, menuBar }) {
                 e.stopPropagation();
                 setMenuBar(false);
               }}
-              className="size-[4vw]"
+              className="sm:size-[3vw] size-[4vw]"
               src={close}
             />
           </div>
-          <div className="mt-12 flex flex-col items-start justify-start gap-5 w-full text-[4.7vw] font-light">
+          <div className="mt-12 flex flex-col items-start justify-start gap-5 w-full sm:text-[3.5vw] text-[4.7vw] font-light">
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "text-white" : "text-gray-400")}
