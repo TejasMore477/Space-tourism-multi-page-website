@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import SideMenu from './Components/partials/SideMenu';
 import Destination from "./Components/Destination";
 import Crew from "./Components/Crew";
+import Technology from "./Components/Technology";
 
 function App() {
   const [menuBar, setMenuBar] = useState(false);
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home setMenuBar={setMenuBar} />} />
         <Route path="/destination" element={<Destination setMenuBar={setMenuBar} />} />
         <Route path="/crew" element={<Crew setMenuBar={setMenuBar} />} />
+        <Route path="/technology" element={<Technology setMenuBar={setMenuBar} />} />
       </Routes>
     </div>
   );
