@@ -49,7 +49,7 @@ function Crew({ setMenuBar }) {
           <h2 className=" mb-5 text-[8vw] uppercase font-light leading-none">
             {crewData[ci].name}
           </h2>
-          <p className=" h-[12vh] mb-5 text-[3.4vw] leading-[17px] font-light mt-2 px-4">
+          <p className=" h-[12vh] mb-5 text-[3.4vw] leading-tight font-light mt-2 px-4">
             {crewData[ci].bio}
           </p>
         </div>

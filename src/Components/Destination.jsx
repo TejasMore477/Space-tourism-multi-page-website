@@ -42,16 +42,15 @@ function Destination({ setMenuBar }) {
           ))}
         </div>
 
-        <div className="mt-5 text-center">
-          <h2 className=" mb-5 text-[10vw] uppercase font-light leading-none">
+        <div className="mt-3 text-center">
+          <h2 className=" mb-3 text-[10vw] uppercase font-light leading-none">
             {destData[di].name}
           </h2>
-          <p className=" h-[10vh] mb-5 text-[3vw] leading-[17px] font-light mt-2 px-4">
+          <p className=" h-[10vh] mb-3 text-[3vw] leading-tight font-light mt-2 px-4">
             {destData[di].description}
           </p>
           <hr className="border-none h-[1.5px] bg-zinc-600 mt-2" />
-          <h3 className=" mt-5 text-[3.3vw] text-zinc-400 font-semibold uppercase leading-none tracking-tighter py-2">
-            {" "}
+          <h3 className=" mt-3 text-[3.3vw] text-zinc-400 font-semibold uppercase leading-none tracking-tighter py-2">
             Avg. distance
           </h3>
           <h2 className="text-[5.3vw] tracking-tight font-semibold italic leading-none">

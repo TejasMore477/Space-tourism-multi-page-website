@@ -50,7 +50,7 @@ function Technology({ setMenuBar }) {
           <h2 className=" mb-5 text-[10vw] uppercase font-light leading-none">
             {techData[ti].name}
           </h2>
-          <p className=" h-[15vh] mb-5 text-[3.4vw] leading-[17px] font-light mt-2 px-4">
+          <p className=" h-[15vh] mb-5 text-[3.4vw] leading-tight font-light mt-2 px-4">
             {techData[ti].description}
           </p>
     
