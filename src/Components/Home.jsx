@@ -25,6 +25,24 @@ function Home({ setMenuBar }) {
         >
           Explore
         </Link>
+        <div className=" w-full text-center font-semibold text-sm leading-tight mt-5">
+          Challenge by{" "}
+          <a
+            className="text-black"
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+          >
+            Frontend Mentor
+          </a>
+          . Coded by{" "}
+          <a
+            href=""
+            className="text-black"
+          >
+            Tejas More
+          </a>
+          .
+        </div>
       </div>
     </div>
   );
