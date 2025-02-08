@@ -21,7 +21,7 @@ function SideMenu({ setMenuBar, menuBar }) {
                 e.stopPropagation();
                 setMenuBar(false);
               }}
-              className="sm:size-[3vw] size-[4vw]"
+              className="lg:size-[2.5vw] sm:size-[3vw] size-[4vw]"
               src={close}
             />
           </div>

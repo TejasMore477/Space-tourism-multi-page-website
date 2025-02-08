@@ -18,7 +18,7 @@ function Technology({ setMenuBar }) {
     >
       <Navbar setMenuBar={setMenuBar} />
       <div className="w-full h-[88vh] text-white flex flex-col items-center justify-around pt-3 sm:px-10 px-6 pb-10">
-        <p className="md:text-[2.4vw] sm:text-[2.7vw] text-[3vw] font-light text-center">03 Space launch 101</p>
+        <p className="lg:text-[2vw] md:text-[2.4vw] sm:text-[2.7vw] text-[3vw] font-light text-center">03 Space launch 101</p>
 
         <div className="sm:w-[40vw] w-[70vw] h-[40vh] flex items-center justify-center">
           <img
@@ -28,12 +28,12 @@ function Technology({ setMenuBar }) {
           />
         </div>
 
-        <div className="flex items-center justify-center gap-5 mt-4">
+        <div className="flex items-center justify-center gap-5 mt-5">
           {techData.map((e, i) => (
             <button
               key={i}
               onClick={() => setTi(i)}
-              className={`md:text-[2vw] sm:text-[2.5vw] text-[3vw] font-light ${
+              className={`lg:text-[1.7vw] md:text-[2vw] sm:text-[2.5vw] text-[3vw] font-light ${
                 ti === i ? "text-white border-b-[1px]" : "text-gray-400"
               }`}
             >
@@ -43,14 +43,14 @@ function Technology({ setMenuBar }) {
         </div>
         
 
-        <div className="mt-5 text-center">
-        <h3 className="md:text-[2vw] sm:text-[2.8vw] text-[4vw] text-zinc-400 font-semibold uppercase leading-none py-2">
+        <div className="mt-5 lg:mt-3 text-center">
+        <h3 className="lg:text-[1.7vw] md:text-[2vw] sm:text-[2.8vw] text-[4vw] text-zinc-400 font-semibold uppercase leading-none py-2">
         The terminology...
           </h3>
-          <h2 className="mb-5 md:text-[6vw] sm:text-[7vw] text-[8vw] uppercase font-light leading-none">
+          <h2 className="mb-5  lg:mb-2 lg:text-[5vw] md:text-[6vw] sm:text-[7vw] text-[8vw] uppercase font-light leading-none">
             {techData[ti].name}
           </h2>
-          <p className=" h-[15vh] mb-5 md:text-[2vw] sm:text-[2.7vw] text-[3.4vw] leading-tight font-light mt-2 px-4">
+          <p className=" h-[15vh] mb-5 lg:mb-0 lg:text-[1.8vw] md:text-[2vw] sm:text-[2.7vw] text-[3.4vw] leading-tight font-light mt-2 px-4">
             {techData[ti].description}
           </p>
     
