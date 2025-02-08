@@ -36,7 +36,7 @@ function Home({ setMenuBar }) {
           </a>
           . Coded by
           <a
-            href=""
+            href="https://github.com/TejasMore477/Space-tourism-multi-page-website"
             className="text-black hover:text-blue-900 px-1 ease-in-out delay-100 transition-colors"
           >
             Tejas More
