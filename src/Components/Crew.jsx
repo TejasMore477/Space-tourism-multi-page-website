@@ -20,7 +20,7 @@ function Crew({ setMenuBar }) {
       <Navbar setMenuBar={setMenuBar} />
 
       <div className="w-full h-[88vh] text-white flex flex-col items-center justify-evenly pt-3 sm:px-10 px-6 pb-10">
-        <p className="md:text-[2.4vw] sm:text-[2.7vw] text-[3vw] font-light text-center"> 02 Meet your crew</p>
+        <p className="xl:text-[1.8vw] md:text-[2.4vw] sm:text-[2.7vw] text-[3vw] font-light text-center"> 02 Meet your crew</p>
         <div className="w-[60vw] h-[40vh] flex items-center justify-center">
           <img
             className=" h-full object-cover object-center lg:mt-5 md:mt-10 mt-5 border-b-[1.5px] border-zinc-500"
@@ -33,7 +33,7 @@ function Crew({ setMenuBar }) {
             <button
               key={i}
               onClick={() => setCi(i)}
-              className={`lg:text-[1.7vw] md:text-[2vw] sm:text-[2.6vw] text-[4vw] font-light ${
+              className={`xl:text-[1.3vw] lg:text-[1.7vw] md:text-[2vw] sm:text-[2.6vw] text-[4vw] font-light ${
                 ci === i ? "text-white" : "text-gray-400"
               }`}
             >
@@ -43,13 +43,13 @@ function Crew({ setMenuBar }) {
         </div>
 
         <div className="text-center">
-          <h3 className="lg:text-[1.7vw] md:text-[2vw] sm:text-[2.8vw] text-[4vw] text-zinc-400 font-semibold uppercase leading-none lg:py-3 md:py-5 py-2">
+          <h3 className="xl:text-[1.3vw] lg:text-[1.7vw] md:text-[2vw] sm:text-[2.8vw] text-[4vw] text-zinc-400 font-semibold uppercase leading-none lg:py-3 md:py-5 py-2">
            {crewData[ci].role}
           </h3>
-          <h2 className="mb-5 lg:text-[5vw] md:text-[6vw] sm:text-[7vw]  text-[8vw] uppercase font-light leading-none">
+          <h2 className="mb-5 xl:text-[4vw] lg:text-[5vw] md:text-[6vw] sm:text-[7vw]  text-[8vw] uppercase font-light leading-none">
             {crewData[ci].name}
           </h2>
-          <p className="h-[12vh] md:mb-5 lg:mb-0 lg:text-[1.8vw] md:text-[2vw]  sm:text-[2.7vw] text-[3.4vw] leading-tight font-light mt-2 px-4">
+          <p className="h-[12vh] md:mb-5 lg:mb-0 xl:text-[1.5vw] lg:text-[1.8vw] md:text-[2vw]  sm:text-[2.7vw] text-[3.4vw] leading-tight font-light mt-2 px-4">
             {crewData[ci].bio}
           </p>
         </div>

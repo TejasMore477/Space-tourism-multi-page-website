@@ -13,7 +13,7 @@ function SideMenu({ setMenuBar, menuBar }) {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="sm:w-[40%] w-[60%] rounded-l-lg bg-zinc-600 backdrop-blur-sm bg-opacity-15 sm:px-10 px-6 sm:pt-7 pt-10"
+          className="sm:w-[40%] w-[60%] rounded-l-lg bg-zinc-600 backdrop-blur-sm bg-opacity-15 lg:px-12  sm:px-10 px-6 lg:pt-9 sm:pt-7 pt-10"
         >
           <div className="w-full flex justify-end">
             <img
@@ -21,11 +21,11 @@ function SideMenu({ setMenuBar, menuBar }) {
                 e.stopPropagation();
                 setMenuBar(false);
               }}
-              className="lg:size-[2.5vw] sm:size-[3vw] size-[4vw]"
+              className="xl:size-[1.5vw] lg:size-[2.5vw] sm:size-[3vw] size-[4vw]"
               src={close}
             />
           </div>
-          <div className="mt-12 flex flex-col items-start justify-start gap-5 w-full sm:text-[3.5vw] text-[4.7vw] font-light">
+          <div className="mt-12 flex flex-col items-start justify-start gap-5 w-full xl:text-[2.7vw] sm:text-[3.5vw] text-[4.7vw] font-light">
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "text-white" : "text-gray-400")}
